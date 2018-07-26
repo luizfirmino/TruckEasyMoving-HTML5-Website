@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Truck Easy Moving &amp; Services</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Moving, Labor Moving, Transportation, Home Improvements, packing, pack, unpack, unpacking, furniture assembly, small movings, pickup with delivery, delivery, Craigslist pickup, movers, moving labor, small movings" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/tt-css.css" rel="stylesheet" type="text/css" media="all" id="tt-css" />
+
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript">
+	
+    jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+    
+    
+    //https://code.tutsplus.com/tutorials/submit-a-form-without-page-refresh-using-jquery--net-59
+    //https://stackoverflow.com/questions/16616250/form-submit-with-ajax-passing-form-data-to-php-without-page-refresh
+    
+    $(function () {
+
+        $('form').on('submit', function (e) {
+
+            e.preventDefault();
+            
+            var dataString = "";
+            dataString += "name=" +     $('#form-name').val();
+            dataString += "&email=" +   $('#form-email').val();
+            dataString += "&phone=" +   $('#form-phone-number').val();
+            dataString += "&service=" + $('#form-service').val();
+            dataString += "&date=" +    $('#form-date').val();
+            dataString += "&date-ex=" + $('#form-date-exactly').val();
+            dataString += "&details=" +  $('#form-details').val();
+       
+            $.ajax({
+                type: 'post',
+                url: 'contact.php',
+                data: dataString,
+                success: function () {
+                    $("#formSubmitted").css("visibility","visible");
+                    $("#formSubmitted").css("display","block");
+                    $("form").trigger('reset');
+                }
+            });
+            
+        });
+
+      });
+    
+</script>
+<!-- start-smoth-scrolling -->
+
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    .ng-scope { width: 300px; }
+</style>
+    
+</head>
+	
+<body>
+<!-- header -->
+<div class="header-top">
+    <div class="logo-top">
+        <div class="logo-top-left">
+            <p>We take care of your belongings as it is our</p>
+        </div>
+        <div class="logo-top-right">
+            
+        </div>
+        <div class="logo-top-lft">
+            
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="logo">
+        <a href="index.html"><img src="images/truck-easy-logo.png"></a>
+        <p>Truck Easy Moving & Services</p>
+    </div>
+    
+    <div class="header-nav">
+        <nav class="navbar navbar-default">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
+                    <li class="hvr-bounce-to-bottom"><a href="#about" class="scroll">About</a></li>
+                    <li class="hvr-bounce-to-bottom"><a href="#services" class="scroll">Services</a></li>
+                    <li class="hvr-bounce-to-bottom"><a href="#pricing" class="scroll">Pricing</a></li>
+                    <!--li class="hvr-bounce-to-bottom"><a href="book.html" class="scroll">Book on-line</a></li-->
+                    <li class="hvr-bounce-to-bottom"><a href="#contact" class="scroll">Reservation</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+<!-- //header -->
+    
+    
+    
+<!-- banner -->
+	<div class="banner">
+		
+			<div class="banner-left">
+			    <div class="view view-eighth">
+					<img src="images/moving.jpg" alt=" " class="img-responsive" />
+					<div class="mask">
+						<h2>Moving</h2>
+						<p>Our team is prepared to move you with a wide smile on the face.</p>
+					</div>
+				</div>
+				<div class="view view-eighth">
+					<img src="images/moving-labor.jpg" alt=" " class="img-responsive" />
+					<div class="mask">
+						<h2>Moving Labor</h2>
+						<p>Got a truck? We can help you load or unload your truck.</p>
+					</div>
+				</div>
+			</div>
+			<div class="banner-right">
+				<div class="view view-eighth">
+					<img src="images/packing.jpg" alt=" " class="img-responsive" />
+					<div class="mask">
+						<h2>Professional Pack</h2>
+						<p>Fast and efficienty, our team will protect your belongings.</p>
+					</div>
+				</div>
+				<div class="view view-eighth">
+					<img src="images/furniture-assembly.jpg" alt=" " class="img-responsive" />
+					<div class="mask">
+						<h2>Furniture Assembly</h2>
+						<p>Got a new furniture? We have expertize and the best price in town.</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	
+<!-- //banner -->
+    
+    
+    
+<!-- moving services -->
+<div class="services" id="services">
+    <div class="container">
+        <h3>Moving Services</h3>
+        <div class="services-grids">
+            <div class="col-md-4 services-grid">
+                <div class="services-grd">
+                     <div class="box maxheight">
+                        <a class="example-image-link" href="images/moving-load.jpg" data-lightbox="example-1" data-title="Guidance."><img class="example-image img-responsive" src="images/moving-load.jpg">
+                        </a>
+                    </div>
+                    <h4>Local Moving</h4>
+                    <p>Professionals ready to take of your belongings with care and quickness.</p>
+                </div>
+            </div>
+            <div class="col-md-4 services-grid">
+                <div class="services-grd">
+                     <div class="box maxheight">
+                        <a class="example-image-link" href="images/moving-labor-uhaul.jpg" data-lightbox="example-1" data-title="Guidance."><img class="example-image img-responsive" src="images/moving-labor-uhaul.jpg">
+                        </a>
+                    </div>
+                    <h4>Moving Labor</h4>
+                    <p>We can load, unloading or help you out as you want.</p>
+                </div>
+            </div>
+            <div class="col-md-4 services-grid">
+                <div class="services-grd">
+                     <div class="box maxheight">
+                        <a class="example-image-link" href="images/small-moving.jpg" data-lightbox="example-1" data-title="Guidance."><img class="example-image img-responsive" src="images/small-moving.jpg">
+                        </a>
+                    </div>
+                    <h4>Small Movings</h4>
+                    <p>Low cost movings, with the same care as always though.</p>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //moving services -->
+    
+    
+    
+<!-- about -->
+<div class="about"></div>
+	
+	<div class="about-bottom" id="about">
+		<div class="container">
+			<div class="about-bottom-grids">
+				
+                <div class="col-md-7 about-bottom-grid-left">
+					<h3>Our Short History</h3>
+					<h4>We are here to offer our best</h4>
+					<p>
+					    We are Truck Easy Moving, a local moving company that was founded just in 2015 and we have been helping a lot of people moving in San Diego since then.<br>
+					    Our team is prepared to anything, and we always do it carrying a wide smile on our face, no matter what we have to do, we love it!<br>
+					    Our goal is not to be the biggest moving company in the world but to be the greatest moving company for you, we pursue your satisfaction.<br>
+					    Take a minute to read our reviews, you can count on us!
+					</p>
+                    <div class="clearfix"> </div>
+				</div>
+                
+				<div class="col-md-5 about-bottom-grid-right">
+					<h3>Testimonials</h3>
+					<div class="about-bottom-grid-right-grid">
+				        <!--THUMBTACK REVIEW WIDGET -->						
+                        <img ng-src="https://static.thumbtackstatic.com/media/logos/thumbtack/wordmark.svg" alt="Thumbtack" src="https://static.thumbtackstatic.com/media/logos/thumbtack/wordmark.svg"> 
+                        <div id="tt-dynamic"></div> 
+                        <div class="tt-best-of ng-scope"> <a ng-href="https://www.thumbtack.com/ca/san-diego/movers/" href="https://www.thumbtack.com/ca/san-diego/movers/" target="_blank"> Thumbtack Best of 2017 </a> </div>
+                        <script type='text/javascript' src='https://www.thumbtack.com/profile/widgets/scripts/?service_id=zwzaObRh$:eN0w&widget_id=review&type=one'></script>
+					</div>
+				</div>
+                
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+    
+<!-- AWARDS -->
+	<div class="services">
+		<div class="container">
+			<h3>Our Awards</h3>
+			
+			<div class="about-grids">
+				<div class="col-md-3 about-grid">
+					<a href="https://www.thumbtack.com/ca/san-diego/last-minute-movers/" id="thumbtack-medallion" target="_blank"><img        src="https://static.thumbtackstatic.com/media/widgets/featured-pro.png" alt="Thumbtack Best Pro of 2015"></a><script src="https://static.thumbtackstatic.com/media/widgets/medallion-links.js"></script>
+				</div>
+				<div class="col-md-3 about-grid">
+					 <a href="https://www.thumbtack.com/ca/san-diego/movers/" target="_blank"> <img ng-src="https://static7.thumbtackstatic.com/media/pages/profile/best-of/best-of-2016.png" src="https://static7.thumbtackstatic.com/media/pages/profile/best-of/best-of-2016.png"> </a> <script type="text/javascript" src="https://www.thumbtack.com/profile/widgets/scripts/service_id=zwzaObRh%24%3AeN0w&amp;widget_id=bestof_2016_medallion"></script>
+				</div>
+                
+                <div class="col-md-3 about-grid">
+					<a href="https://www.thumbtack.com/ca/san-diego/moving-companies/moving-furniture-assembly-other-services" target="_blank"><img src="images/Top-Pro-Badge.jpg" class="img-responsive" alt="Top Pro"></a>
+				</div>
+                
+                <div class="col-md-3 about-grid">
+					<a href="https://www.thumbtack.com/ca/san-diego/moving-companies/moving-furniture-assembly-other-services" target="_blank"><img src="images/Top-Pro-Badge-2018.jpg" class="img-responsive" alt="Top Pro"></a>
+				</div>
+                
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+	</div>
+    
+    <div class="services-bottom">
+		<div class="container">
+			<h3>Others Services</h3>
+
+            <div class="services-bottom-grids">
+				<div class="col-md-6 services-bottom-grid">
+					<div class="col-xs-3 services-bottom-grd-left">
+						<div class="time-service">
+							<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="col-xs-9 services-bottom-grd-right">
+						<h4>Furniture Assembly/Disassembly</h4>
+                        <p>Especialized professionals ready to put your furniture together without a scratch.</p>
+					</div>
+                    
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 services-bottom-grid">
+					<div class="col-xs-3 services-bottom-grd-left">
+						<div class="time-service">
+							<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="col-xs-9 services-bottom-grd-right">
+						<h4>Packing and Unpacking</h4>
+                        <p>No time to pack your belongings? We provide packing professionals to take of it.</p>
+					</div>
+					
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="services-bottom-grids">
+				<div class="col-md-6 services-bottom-grid">
+					<div class="col-xs-3 services-bottom-grd-left">
+						<div class="time-service">
+							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="col-xs-9 services-bottom-grd-right">
+						<h4>Home Improvements</h4>
+                        <p>TV mountings, small fixings, painting, cleaning</p>
+					</div>
+					
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-sm-6 services-bottom-grid">
+					<div class="col-xs-3 services-bottom-grd-left">
+						<div class="time-service">
+							<span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="col-xs-9 services-bottom-grd-right">
+						<h4>Pick up and delivery</h4>
+                        <p>We can pick up and deliver your order from any stores, IKEA, Jeromes, Home Depot, Lowes, Craigslist, Offer-up, Let it go, etc. Also Donate Goods at Goodwill, Salvation Army, etc.</p>
+					</div>
+					
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    
+    
+    
+<!-- pricing -->
+	<div id="pricing" class="pricing">
+		<div class="container">
+			<div class="price">
+				<h2>Pricing</h2>
+			</div>
+			<div class="basic">
+				<div class="business">
+					<h2>Moving</h2>
+					<p>Residential / Office</p>
+				</div>
+				<div class="value">
+					<p>$160 (first 2 hours working)</p>
+				</div>
+				<ul>
+				    <li><span>2</span> movers</li>
+					<li><span>Truck</span> up 26 feet</li>
+				    <li><span>$50</span> extra hours</li>
+                    <li class="gd"><span>Fee and taxes</span> included</li>
+				</ul>
+				<div class="buy-me">
+					<a href="#contact" class="scroll">Reserve it!</a>
+				</div>
+			</div>
+			<div class="basic basic-mid">
+				<div class="business">
+					<h2>Moving Labor</h2>
+					<p>Load/unload or same building moving</p>
+				</div>
+				<div class="value">
+					<p>$50/hour</p>
+				</div>
+				<ul>
+					<li><span>2</span> movers</li>
+					<li><span>2 hours</span> minimum</li>
+					<li><span>Fully</span> equipment</li>
+					<li class="gd"><span>Fee and taxes</span> included</li>
+				</ul>
+				<div class="buy-me">
+					<a href="#contact" class="scroll">Reserve it!</a>
+				</div>
+			</div>
+			<div class="basic">
+				<div class="business">
+					<h2>Small Movings</h2>
+					<p>Best for small furniture</p>
+				</div>
+				<div class="value">
+					<p>$70</p>
+				</div>
+				<ul>
+					<li><span>2</span> movers</li>
+					<li><span>Pickup</span> truck</li>
+					<li><span>up 30</span> miles</li>
+					<li class="gd"><span>Fee and taxes</span> included</li>
+				</ul>
+				<div class="buy-me">
+					<a href="#contact" class="scroll">Reserve it!</a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		
+		    <p>&nbsp;</p>
+		
+			<div class="basic">
+				<div class="business">
+					<h2>Furniture Assembly</h2>
+					<p>Dressers, nightstands, tables, desks</p>
+				</div>
+				<div class="value">
+					<p>starting at $60</p>
+				</div>
+				<ul>
+				    <li><span>1</span> assembler</li>
+                    <li><span>suitable</span> tools</li>
+					<li class="gd"><span>Fee and taxes</span> included</li>
+				</ul>
+				<div class="buy-me">
+					<a href="#contact" class="scroll">Reserve it!</a>
+				</div>
+			</div>
+			<div class="basic basic-mid">
+				<div class="business">
+					<h2>Professional Packing</h2>
+					<p>Let the hard work with us</p>
+				</div>
+				<div class="value">
+					<p>$50/hour</p>
+				</div>
+				<ul>
+					<li><span>2</span> movers</li>
+					<li><span>2 hours</span> minimum</li>
+					<li><span>All supplies</span> included*</li>
+					<li class="gd"><span>Fee and taxes</span> included</li>
+				</ul>
+				<div class="buy-me">
+					<a href="#contact" class="scroll">Reserve it!</a>
+				</div>
+			</div>
+			<div class="basic">
+				<div class="business">
+					<h2>Pick up with delivery</h2>
+					<p>Craigslist, Offerup, etc.</p>
+				</div>
+				<div class="value">
+					<p>$40</p>
+				</div>
+				<ul>
+					<li><span>1</span> mover</li>
+					<li><span>Pickup</span> truck</li>
+					<li><span>up 20</span> miles</li>
+					<li class="gd"><span>Fee and taxes</span> included</li>
+				</ul>
+				<div class="buy-me">
+					<a href="#contact" class="scroll">Reserve it!</a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //pricing -->
+
+
+<!-- contact -->
+	<div id="contact" class="contact">
+		<div class="container">
+			<div class="contact-grids">
+				<div class="col-md-8 contact-grid">
+					<h3>Reservation</h3>
+                    
+					<form name="form" id="form" method="post">
+					    
+                      <input type="text" name="form-name" id="form-name" placeholder="Name" required>
+                      <input type="email" name="form-email" id="form-email"  placeholder="E-mail" required>
+				      <input type="text" id="form-phone-number" placeholder="Phone Number" required>
+                       
+                       <select name="form-service" id="form-service" required>
+                            <option value="">Select the service</option>
+					        <option value="Moving">Moving</option>
+					        <option value="Moving Labor">Moving Labor</option>
+					        <option value="Small Moving">Small Moving</option>
+					        <option value="Furniture Assembly">Furniture Assembly</option>
+					        <option value="Professional Packing">Professional Packing/Unpacking</option>
+					        <option value="Picking with delivery">Pick up with delivery</option>
+					    </select>
+                        
+                        <fieldset>
+                            <legend>When the job should be done?</legend>
+                            <ul>
+                                <li><input name="form-job-date" id="form-date" type="radio" value="I dont know" required> I don't know yet</li>
+                                <li><input name="form-job-date" id="form-date" type="radio" value="ASAP" required> As soon as possible</li>
+                                <li><input name="form-job-date" id="form-date" type="radio" value="This Week" required> This week</li>
+                                <li><input name="form-job-date" id="form-date" type="radio" value="Next Week" required> Next week</li>
+                                <li><input name="form-job-date" id="form-date" type="radio" value="Exactly date" required> Date 
+                                <input name="form-job-date-exactly" id="form-date-exactly" type="date"></li>
+                            </ul>
+                        </fieldset>						
+						<textarea type="text" name="form-details" id="form-details" placeholder="Details such as number of bed rooms, oversized furniture, flight of stairs ..." required></textarea>
+										        
+						<input type="submit" value="Send">
+                        
+                        <div id="formSubmitted" style="visibility: hidden; display: none;">
+                            Your information was successfully sent!<br>
+                            We will get back to you as soon as possible, thank you very much for the interest.
+                        </div>
+                        
+				
+					</form>
+				</div>
+				<div class="col-md-4 contact-grid">
+					<h3>Contact Info</h3>
+					
+					<ul>
+						<li class="dot"><i class="glyphicon glyphicon-time" aria-hidden="true"></i>Monday through Monday<span>9am-5pm</span></li>
+						<li class="Phone"><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>619 431 9439</li>
+						<li class="mail"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@truckeasymoving.com" class="mail">info@truckeasymoving.com</a></li>
+					</ul>
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">	
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid">
+					<h3>Follow Us</h3>
+                    <a href="https://www.yelp.com/biz/truck-easy-moving-and-services-san-diego" target="_blank"><img src="images/yelp.png" alt="" class="img-responsive"></a><br>
+                    <a href="https://www.thumbtack.com/ca/san-diego/moving-companies/moving-furniture-assembly-other-services" target="_blank">
+                       <img src="images/ThumbtackLogo.png" alt="" class="img-responsive"></a>
+                    
+				</div>
+				<div class="col-md-4 footer-grid">
+					<h3>Our Partners</h3>
+					<div class="dealer-grids">
+						<div class="dealer-grid-left">
+							<img src="images/uhaullogomedium.png" alt=" " class="img-responsive" />
+						</div>
+						<div class="dealer-grid-right">
+							<img src="images/Ryder-logo.jpg" alt="" class="img-responsive" />
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="dealer-grids">
+						<div class="dealer-grid-left">
+							<a href="#"><img src="images/Enterprise_Rent-A-Car_Logo.svg.png" alt="" class="img-responsive" /></a>
+						</div>
+						<div class="dealer-grid-right">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<h3>Posts</h3>
+                    <iframe width="350" height="197" src="https://www.youtube.com/embed/QflrU7V5HLg" frameborder="0" allowfullscreen></iframe>
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">	
+			<p>Copyright © 2017 Truck Easy Moving and Services. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"> </script>
+<!-- //for bootstrap working -->
+</body>
+</html>
